@@ -8,48 +8,194 @@
     <link rel="icon" type="image/png" href="./assets/images/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/aplication.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">La Cuchibruja</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">PROYECTO: LA CUCHIBRUJA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Leyenda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Galería</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Equipo</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Construcción</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#leyenda">Leyenda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fabricacion">Fabricación</a></li>
                 </ul>
-              </div>
             </div>
-            </nav>
-    </header>
+        </div>
+    </nav>
 
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h1>COCOTRÓN 2025</h1>
+            <h2>Nuestra Propuesta: La Cuchibruja</h2>
+            <p class="lead">Un proyecto para conmemorar el Día de Muertos, dando vida a una de las leyendas femeninas más enigmáticas de Oaxaca a través de la tecnología animatrónica.</p>
+            <a href="#galeria" class="btn btn-danger btn-lg mt-3">VER NUESTRO PROYECTO</a>
+            <a href="https://cultura.buap.mx/pdf/convocatoria-cocotron-2025" class="btn btn-outline-light btn-lg mt-3 ms-2" target="_blank">BASES DEL CONCURSO</a>
+        </div>
+    </section>
 
-    <div>
+    <section id="leyenda" class="content-section">
+        <div class="container">
+            <h2 class="section-title">La Cuchibruja: Leyenda de Oaxaca</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <p class="lead">En el corazón de Oaxaca, las historias de brujas se entrelazan con la vida cotidiana. Una de las más enigmáticas es la de la Cuchibruja, una figura femenina poderosa y temida, capaz de transformarse y sembrar el misterio en las noches oaxaqueñas.</p>
+                    <p>Se cuenta que estas mujeres, mediante pactos oscuros, pueden desprenderse de su piel para volar como bolas de fuego o adoptar formas animales. Su presencia se anuncia con el viento y el silencio, y su legado perdura en los susurros de las abuelas.</p>
+                    <p>Nuestra meta es capturar la esencia de esta leyenda, interpretando su dualidad de mujer y ser místico a través de un animatrónico que evoque tanto fascinación como terror.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <figure>
+                        <img src="assets/images/cuchibruja.jpg" alt="Ilustración de la Cuchibruja" class="img-fluid img-legend">
+                        <figcaption class="image-credit mt-2">
+                            Ilustración de la portada para el podcast 
+                            <a href="https://youtu.be/GdLS6SMYuE0" target="_blank" class="credit-link">"El Baúl de las Leyendas"</a> 
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <section id="galeria" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Nuestro Animatrónico</h2>
+            <p class="text-center mb-5">Un vistazo a nuestra interpretación de "La Cuchibruja", desde el concepto hasta la creación final.</p>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom h-100">
+                        <img src="assets/images/boceto.jpg" class="card-img-top" alt="Boceto del animatrónico">
+                        <div class="card-body">
+                            <h5 class="card-title">Arte Conceptual</h5>
+                            <p class="card-text">Los primeros bocetos y diseños que definieron la estética y el ambiente de nuestro proyecto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom h-100">
+                        <img src="assets/images/proceso.jpg" class="card-img-top" alt="Proceso de construcción">
+                        <div class="card-body">
+                            <h5 class="card-title">Proceso de Construcción</h5>
+                            <p class="card-text">Fotografías del ensamblaje mecánico, la instalación de la electrónica y el trabajo artesanal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom h-100">
+                        <img src="assets/images/resultado.jpg" class="card-img-top" alt="Resultado final del animatrónico">
+                        <div class="card-body">
+                            <h5 class="card-title">Resultado Final</h5>
+                            <p class="card-text">El animatrónico terminado, listo para contar su leyenda en Cocotrón 2025.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="integrantes" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo: Los Brujamones</h2>
+            <p class="text-center mb-5">Conoce a los creadores detrás de este proyecto.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom text-center h-100">
+                        <img src="assets/images/edy.png" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" alt="Foto de Edy">
+                        <div class="card-body">
+                            <h5 class="card-title">Edy Alberto Hernández Martínez</h5>
+                            <p class="card-text"><b>Rol:</b> Organizador</p>
+                            <p class="card-text"><small class="text-muted">Concepto e Investigación</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom text-center h-100">
+                        <img src="assets/images/jared.png" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" alt="Foto de Jared">
+                        <div class="card-body">
+                            <h5 class="card-title">Jared Hernández Ramírez</h5>
+                            <p class="card-text"><b>Rol:</b> Diseñador</p>
+                            <p class="card-text"><small class="text-muted">Diseño Web y Documentación</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom text-center h-100">
+                        <img src="assets/images/oscar.png" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" alt="Foto de Óscar">
+                        <div class="card-body">
+                            <h5 class="card-title">Óscar Arturo Gallegos Arango</h5>
+                            <p class="card-text"><b>Rol:</b> Ensamblador</p>
+                            <p class="card-text"><small class="text-muted">Diseño de Estructura y Mecánica</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom text-center h-100">
+                        <img src="assets/images/electronico.png" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" alt="Foto del miembro pendiente">
+                        <div class="card-body">
+                            <h5 class="card-title">Pendiente</h5>
+                            <p class="card-text"><b>Rol:</b> Electrónico</p>
+                            <p class="card-text"><small class="text-muted">Cableado y Programación</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fabricacion" class="content-section">
+        <div class="container">
+            <h2 class="section-title">El Proceso Creativo</h2>
+            <p class="text-center mb-5">Las fases clave que seguimos para dar vida a nuestra Cuchibruja.</p>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">1. Investigación y Concepto</h5>
+                            <p class="card-text">Sumérgete en la leyenda de la Cuchibruja. Investiga sus orígenes, variantes y simbolismos. Define el concepto central de tu obra: ¿Qué aspecto de la leyenda quieres destacar? ¿Qué mensaje quieres transmitir?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">2. Bocetos y Diseño</h5>
+                            <p class="card-text">Plasma tus ideas iniciales. Realiza bocetos, maquetas o diseños digitales. Experimenta con diferentes composiciones, materiales o técnicas. La originalidad y la conexión con la leyenda son clave.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">3. Creación y Ejecución</h5>
+                            <p class="card-text">Es el momento de dar forma a tu visión. Trabaja en tu obra con dedicación, prestando atención a los detalles. Si tu obra es física, toma fotografías del proceso. Si es digital, guarda versiones de tus avances.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">4. Documentación y Presentación</h5>
+                            <p class="card-text">Una vez finalizada tu obra, documenta tu proceso. Escribe una breve descripción de tu pieza, explicando tu inspiración y los materiales/técnicas utilizadas. Prepara imágenes de alta calidad para la galería.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Brujamones - Proyecto para Cocotrón.</p>
+            <p>Concurso organizado por la Benemérita Universidad Autónoma de Puebla.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
