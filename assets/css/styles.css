@@ -197,6 +197,11 @@ body {
     font-family: 'Cinzel', serif;
 }
 
+.card-img-top .carousel-item img {
+    aspect-ratio: 4 / 3;  /* Proporción 4:3, puedes cambiarla a 16/9 o 1/1 si prefieres */
+    object-fit: cover;    /* Asegura que la imagen cubra el espacio sin deformarse */
+}
+
 .img-legend {
     max-width: 100%;
     height: auto;

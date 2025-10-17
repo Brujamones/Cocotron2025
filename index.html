@@ -66,35 +66,102 @@
     <section id="galeria" class="content-section">
         <div class="container">
             <h2 class="section-title">Nuestro Animatrónico</h2>
-            <p class="text-center mb-5">Un vistazo a nuestra interpretación de "La Cuchibruja", desde el concepto hasta la creación final.</p>
+            <p class="text-center mb-5">Un vistazo a nuestra interpretación de "La Cuchibruja". Navega por las imágenes en cada categoría.</p>
             <div class="row">
+
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card card-custom h-100">
-                        <img src="assets/images/boceto.jpg" class="card-img-top" alt="Boceto del animatrónico">
+                        <div id="cardCarousel1" class="carousel slide card-img-top" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/boceto.jpg" class="d-block w-100" alt="Boceto inicial">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/boceto_ia.jpg" class="d-block w-100" alt="Diseño de personaje">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/escenario_ia.png" class="d-block w-100" alt="Concepto de escenario">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Arte Conceptual</h5>
-                            <p class="card-text">Los primeros bocetos y diseños que definieron la estética y el ambiente de nuestro proyecto.</p>
+                            <p class="card-text">Los primeros bocetos y diseños que definieron la estética de nuestro proyecto.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card card-custom h-100">
-                        <img src="assets/images/proceso.jpg" class="card-img-top" alt="Proceso de construcción">
+                        <div id="cardCarousel2" class="carousel slide card-img-top" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/base_escenario.jpg" class="d-block w-100" alt="Base del escenario">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/base_arbol.jpg" class="d-block w-100" alt="Base del árbol">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/base_cerdo.jpg" class="d-block w-100" alt="Base del cerdo">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/bruja_inicio.jpg" class="d-block w-100" alt="Base de la bruja">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Proceso de Construcción</h5>
                             <p class="card-text">Fotografías del ensamblaje mecánico, la instalación de la electrónica y el trabajo artesanal.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card card-custom h-100">
-                        <img src="assets/images/resultado.jpg" class="card-img-top" alt="Resultado final del animatrónico">
+                        <div id="cardCarousel3" class="carousel slide card-img-top" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/resultado_1.jpg" class="d-block w-100" alt="Animatrónico completo">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/resultado_2.jpg" class="d-block w-100" alt="Detalle del rostro">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/resultado_3.jpg" class="d-block w-100" alt="Animatrónico en acción">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Resultado Final</h5>
                             <p class="card-text">El animatrónico terminado, listo para contar su leyenda en Cocotrón 2025.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -126,7 +193,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="card card-custom text-center h-100">
-                        <img src="assets/images/oscar.png" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" alt="Foto de Óscar">
+                        <img src="assets/images/arti.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" alt="Foto de Óscar">
                         <div class="card-body">
                             <h5 class="card-title">Óscar Arturo Gallegos Arango</h5>
                             <p class="card-text"><b>Rol:</b> Ensamblador</p>
@@ -136,9 +203,9 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="card card-custom text-center h-100">
-                        <img src="assets/images/electronico.png" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" alt="Foto del miembro pendiente">
+                        <img src="assets/images/mau.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" alt="Foto de Mauricio">
                         <div class="card-body">
-                            <h5 class="card-title">Pendiente</h5>
+                            <h5 class="card-title">Mauricio Lagos Manzanarez</h5>
                             <p class="card-text"><b>Rol:</b> Electrónico</p>
                             <p class="card-text"><small class="text-muted">Cableado y Programación</small></p>
                         </div>
@@ -150,41 +217,46 @@
 
     <section id="fabricacion" class="content-section">
         <div class="container">
-            <h2 class="section-title">El Proceso Creativo</h2>
-            <p class="text-center mb-5">Las fases clave que seguimos para dar vida a nuestra Cuchibruja.</p>
-            <div class="row">
-                <div class="col-md-6 mb-4">
+            <h2 class="section-title">El Proceso de Fabricación</h2>
+            <p class="text-center mb-5">Un vistazo real a las fases clave que hemos seguido para dar vida a nuestra Cuchibruja.</p>
+            <div class="row justify-content-center">
+
+                <div class="col-md-5 mb-4">
                     <div class="card card-custom h-100">
                         <div class="card-body">
-                            <h5 class="card-title">1. Investigación y Concepto</h5>
-                            <p class="card-text">Sumérgete en la leyenda de la Cuchibruja. Investiga sus orígenes, variantes y simbolismos. Define el concepto central de tu obra: ¿Qué aspecto de la leyenda quieres destacar? ¿Qué mensaje quieres transmitir?</p>
+                            <h5 class="card-title">1. Planeación y Diseño</h5>
+                            <p class="card-text">Todo comenzó en el pizarrón. Definimos las dimensiones clave del proyecto (1 metro de altura total) y los movimientos esenciales que tendría nuestro animatrónico: <strong>brazos móviles y la boca del cerdo</strong>. También creamos nuestra lista de materiales, optando por elementos accesibles y resistentes.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
+
+                <div class="col-md-5 mb-4">
                     <div class="card card-custom h-100">
                         <div class="card-body">
-                            <h5 class="card-title">2. Bocetos y Diseño</h5>
-                            <p class="card-text">Plasma tus ideas iniciales. Realiza bocetos, maquetas o diseños digitales. Experimenta con diferentes composiciones, materiales o técnicas. La originalidad y la conexión con la leyenda son clave.</p>
+                            <h5 class="card-title">2. Materiales y Preparación</h5>
+                            <p class="card-text">Con el plan definido, reunimos nuestros materiales principales. La estructura se basará en <strong>tubos de PVC</strong> de distintos grosores, <strong>alambre</strong> para las uniones, y una base sólida de <strong>madera MDF</strong>. Estos componentes nos darán la rigidez y ligereza necesarias para el esqueleto del animatrónico.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
+
+                <div class="col-md-5 mb-4">
                     <div class="card card-custom h-100">
                         <div class="card-body">
-                            <h5 class="card-title">3. Creación y Ejecución</h5>
-                            <p class="card-text">Es el momento de dar forma a tu visión. Trabaja en tu obra con dedicación, prestando atención a los detalles. Si tu obra es física, toma fotografías del proceso. Si es digital, guarda versiones de tus avances.</p>
+                            <h5 class="card-title">3. Construcción de la Estructura</h5>
+                            <p class="card-text">¡Manos a la obra! Comenzamos a ensamblar el cuerpo del cerdo, que servirá como base para la bruja. Usando un tubo de PVC de mayor diámetro como torso, fijamos los tubos más delgados con alambre para formar la base de las patas. Esta estructura inicial es fundamental para soportar el peso y los mecanismos.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
+
+                <div class="col-md-5 mb-4">
                     <div class="card card-custom h-100">
                         <div class="card-body">
-                            <h5 class="card-title">4. Documentación y Presentación</h5>
-                            <p class="card-text">Una vez finalizada tu obra, documenta tu proceso. Escribe una breve descripción de tu pieza, explicando tu inspiración y los materiales/técnicas utilizadas. Prepara imágenes de alta calidad para la galería.</p>
+                            <h5 class="card-title">4. Montaje de Mecanismos y Base</h5>
+                            <p class="card-text">Paralelamente, trabajamos en la plataforma del escenario. Sobre la base de madera MDF, comenzamos a instalar un <strong>riel metálico</strong> que servirá como guía para uno de los movimientos principales del animatrónico. El escenario es tan importante como el personaje para contar la historia completa.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
